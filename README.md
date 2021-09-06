@@ -1,2 +1,0 @@
-# CalculatorJavaScript
-draggable calculator
