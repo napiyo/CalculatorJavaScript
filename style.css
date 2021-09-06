@@ -1,0 +1,99 @@
+body {
+    background: rgb(110, 108, 108);
+}
+
+.container {
+    background: rgb(27, 98, 204);
+    width: 320px;
+    position: absolute;
+    overflow: auto;
+}
+
+.header {
+    text-align: end;
+    font-size: 25px;
+    padding-right: 20px;
+    padding-top: 5px;
+    color: white;
+    background: rgb(6, 6, 116);
+    box-shadow: inset 0 3px 15px black;
+    cursor: move;
+}
+
+.header span {
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.claculater {
+    padding: 30px;
+    padding-top: 5px;
+}
+
+.screen {
+    text-align: end;
+    width: 100%;
+    background: white;
+    padding: 5px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    border: 1px solid black;
+    min-height: 29px;
+    font-size: 25px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.numeric {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+}
+
+.numeric button {
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#backspace {
+    padding: 2px;
+}
+
+#backspace img {
+    width: 20px;
+}
+
+.operators {
+    display: grid;
+    margin-left: 5px;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    grid-template-rows: auto auto auto;
+}
+
+#equalbtn {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background: rgb(138, 67, 27);
+}
+
+.operators button {
+    cursor: pointer;
+    font-size: 28px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background: rgb(79, 79, 212);
+    transition: all 0.3s;
+    transform: scale(1.2);
+    color: white;
+    /* border: 1px solid white; */
+    box-shadow: 0 0 10px black;
+}
